@@ -1,0 +1,36 @@
+<nz-layout nzTheme="light">
+  <nz-sider nzTheme="light" nzCollapsible [(nzCollapsed)]="isCollapsed" [nzTrigger]="null">
+    <ul>
+      <i class="trigger" nz-icon [nzType]="isCollapsed ? 'menu-unfold' : 'menu-fold'"
+      (click)="isCollapsed = !isCollapsed"></i>
+    </ul>
+    <ul nz-menu nzMode="inline" nzTheme="light">
+      <li nz-menu-item nz-tooltip nzTooltipPlacement="right" [nzTooltipTitle]="isCollapsed ? 'Ingredients' : ''" 
+        routerLink="Ingredients"
+      >
+      <i nz-icon nzType="unordered-list" nzTheme="outline"></i>
+        <span>Ingredients</span>
+      </li>
+      <li nz-menu-item nz-tooltip nzTooltipPlacement="right" [nzTooltipTitle]="isCollapsed ? 'Menus' : ''"
+      routerLink="Menus"
+      >
+        <i nz-icon nzType="menu" nzTheme="outline"></i>
+        <span>Menu</span>
+      </li>
+      <li nz-menu-item nz-tooltip nzTooltipPlacement="right" [nzTooltipTitle]="isCollapsed ? 'Category' : ''"
+      routerLink="Category"
+      >
+      <i nz-icon nzType="ordered-list" nzTheme="outline"></i>
+        <span>Category</span>
+      </li>
+    </ul>
+  </nz-sider>
+  <nz-layout>
+  <nz-header><h2>Welcome to our restaurant</h2></nz-header>
+    
+    <nz-content>
+      <router-outlet></router-outlet>
+    </nz-content>
+    <nz-footer><nz-breadcrumb [nzAutoGenerate]="true"></nz-breadcrumb></nz-footer>
+  </nz-layout>
+</nz-layout>

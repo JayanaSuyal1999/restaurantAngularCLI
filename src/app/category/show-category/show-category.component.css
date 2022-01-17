@@ -1,0 +1,13 @@
+.button{
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px;
+}
+
+.addItem{
+    background-color : rgb(15, 192, 15);
+}
+.footer .add{
+    background-color: rgb(15, 192, 15);
+    color: white;
+}

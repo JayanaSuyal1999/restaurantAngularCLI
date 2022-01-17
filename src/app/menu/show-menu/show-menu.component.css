@@ -1,0 +1,24 @@
+.addItem {
+    background-color: rgb(15, 192, 15);
+}
+
+.table{
+    margin-top: 20px;
+    padding: auto;
+    
+}
+.button{
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px;
+}
+
+.footer{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footer .add{
+    background-color: rgb(15, 192, 15);
+    color: white;
+}
